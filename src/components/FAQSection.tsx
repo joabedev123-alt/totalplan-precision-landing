@@ -7,9 +7,9 @@ import {
 
 const faqs = [
   {
-    pergunta: "Quais materiais as espátulas TotalPlan utilizam?",
+    pergunta: "Quais materiais as espátulas Totalpan utilizam?",
     resposta:
-      "Nossas espátulas são fabricadas com aço inoxidável AISI 420 de alta qualidade, que oferece excelente resistência à corrosão e durabilidade. Os cabos são produzidos com materiais ergonômicos que garantem conforto durante longas jornadas de trabalho.",
+      "Nossas espátulas são fabricadas com aço inoxidável AISI 420 de alta qualidade, seguro para alimentos e que oferece excelente resistência à corrosão e durabilidade. Os cabos são produzidos com materiais ergonômicos que garantem conforto durante longas jornadas na cozinha.",
   },
   {
     pergunta: "Entregam para o Brasil todo?",
@@ -22,9 +22,9 @@ const faqs = [
       "Oferecemos garantia contra defeitos de fabricação. Em caso de qualquer problema, nossa equipe de suporte está pronta para realizar a substituição imediata do produto.",
   },
   {
-    pergunta: "As espátulas servem para massa corrida, epóxi ou cimento queimado?",
+    pergunta: "As espátulas servem para bolos, confeitaria e uso em chapas?",
     resposta:
-      "Absolutamente! Nossa linha de espátulas foi desenvolvida para atender diversas aplicações profissionais, incluindo massa corrida, gesso, epóxi, cimento queimado, textura, rejunte e muito mais. Temos modelos específicos para cada tipo de acabamento.",
+      "Absolutamente! Nossa linha de espátulas foi desenvolvida para atender diversas aplicações culinárias, incluindo bolos, tortas, confeitaria, coberturas, glacês, chantilly, buttercream, trabalhos em chapas e muito mais. Temos modelos específicos para cada tipo de preparação.",
   },
   {
     pergunta: "Como faço um pedido?",

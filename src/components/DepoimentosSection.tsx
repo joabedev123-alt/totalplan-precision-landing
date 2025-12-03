@@ -3,34 +3,34 @@ import { Star, Quote } from "lucide-react";
 const depoimentos = [
   {
     id: 1,
-    nome: "Carlos Silva",
-    profissao: "Mestre de Obras",
+    nome: "Ana Paula Santos",
+    profissao: "Confeiteira",
     cidade: "São Paulo, SP",
-    texto: "As espátulas TotalPlan mudaram completamente meu trabalho. O acabamento ficou muito mais profissional e a durabilidade é impressionante.",
+    texto: "As espátulas Totalpan mudaram completamente meu trabalho. O acabamento dos bolos ficou muito mais profissional e a durabilidade é impressionante.",
     estrelas: 5,
   },
   {
     id: 2,
-    nome: "Roberto Almeida",
-    profissao: "Gesseiro",
+    nome: "Chef Roberto Almeida",
+    profissao: "Chef de Confeitaria",
     cidade: "Campinas, SP",
-    texto: "Trabalho com gesso há 15 anos e nunca encontrei espátulas tão boas. A flexibilidade é perfeita e o cabo não escorrega.",
+    texto: "Trabalho com confeitaria há 15 anos e nunca encontrei espátulas tão boas. A flexibilidade é perfeita para coberturas e o cabo não escorrega.",
     estrelas: 5,
   },
   {
     id: 3,
-    nome: "Marcos Oliveira",
-    profissao: "Pintor Profissional",
+    nome: "Mariana Oliveira",
+    profissao: "Cake Designer",
     cidade: "Amparo, SP",
-    texto: "Uso para massa corrida e textura. O resultado é sempre impecável. Recomendo para todos os profissionais.",
+    texto: "Uso para bolos decorados e coberturas. O resultado é sempre impecável. Recomendo para todos os profissionais da confeitaria.",
     estrelas: 5,
   },
   {
     id: 4,
     nome: "André Costa",
-    profissao: "Aplicador de Epóxi",
+    profissao: "Chef de Cozinha",
     cidade: "Jundiaí, SP",
-    texto: "Para cimento queimado e epóxi, não tem igual. A espátula desliza perfeitamente e distribui o material de forma uniforme.",
+    texto: "Para trabalhos em chapa e preparações delicadas, não tem igual. A espátula desliza perfeitamente e distribui os ingredientes de forma uniforme.",
     estrelas: 5,
   },
 ];
@@ -47,7 +47,7 @@ const DepoimentosSection = () => {
             Profissionais que <span className="text-gradient">Confiam</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
-            Veja o que dizem os especialistas que utilizam nossas ferramentas
+            Veja o que dizem os especialistas que utilizam nossos utensílios
           </p>
         </div>
 
@@ -62,19 +62,19 @@ const DepoimentosSection = () => {
               <div className="absolute top-6 right-6 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                 <Quote className="w-6 h-6 text-primary" />
               </div>
-              
+
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(depo.estrelas)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                 ))}
               </div>
-              
+
               {/* Content */}
               <p className="text-foreground mb-6 leading-relaxed pr-12">
                 "{depo.texto}"
               </p>
-              
+
               {/* Author */}
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">

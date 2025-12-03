@@ -12,16 +12,16 @@ const GarantiaSection = () => {
               </div>
               <div>
                 <h2 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">
-                  Garantia de Qualidade TotalPlan
+                  Garantia de Qualidade Totalpan
                 </h2>
               </div>
             </div>
-            
+
             <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed">
-              Nossas espátulas são fabricadas seguindo padrões industriais rigorosos. 
+              Nossas espátulas são fabricadas seguindo padrões industriais rigorosos.
               Caso haja defeito de fabricação, oferecemos suporte imediato e substituição.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -36,7 +36,7 @@ const GarantiaSection = () => {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Headphones className="w-6 h-6 text-primary" />

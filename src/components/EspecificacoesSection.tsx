@@ -4,44 +4,44 @@ const especificacoes = [
   {
     categoria: "Tipo de Aço",
     valor: "Inoxidável AISI 420",
-    descricao: "Alta resistência à corrosão e durabilidade excepcional",
+    descricao: "Alta resistência à corrosão, seguro para alimentos e durabilidade excepcional",
   },
   {
     categoria: "Tratamento da Lâmina",
     valor: "Têmpera Especial",
-    descricao: "Processo térmico que garante dureza e flexibilidade ideais",
+    descricao: "Processo térmico que garante dureza e flexibilidade ideais para uso culinário",
   },
   {
     categoria: "Ergonomia do Cabo",
     valor: "Design Anatômico",
-    descricao: "Formato que reduz fadiga e proporciona máximo controle",
+    descricao: "Formato que reduz fadiga e proporciona máximo controle durante longas jornadas",
   },
   {
     categoria: "Flexibilidade",
     valor: "Calibrada por Modelo",
-    descricao: "Cada modelo possui flexibilidade otimizada para sua aplicação",
+    descricao: "Cada modelo possui flexibilidade otimizada para sua aplicação culinária",
   },
   {
-    categoria: "Resistência à Corrosão",
-    valor: "Classe Superior",
-    descricao: "Proteção contra oxidação em ambientes agressivos",
+    categoria: "Segurança Alimentar",
+    valor: "Food Safe",
+    descricao: "Materiais aprovados para contato direto com alimentos",
   },
   {
     categoria: "Precisão",
     valor: "Milimétrica",
-    descricao: "Bordas retificadas para acabamento perfeito",
+    descricao: "Bordas retificadas para acabamento perfeito em decorações",
   },
 ];
 
 const aplicacoes = [
-  "Massa Corrida",
-  "Gesso",
-  "Epóxi",
-  "Cimento Queimado",
-  "Textura",
-  "Rejunte",
-  "Argamassa",
-  "PVA",
+  "Bolos e Tortas",
+  "Confeitaria",
+  "Coberturas e Glacês",
+  "Chantilly",
+  "Buttercream",
+  "Ganache",
+  "Massas",
+  "Decorações",
 ];
 
 const EspecificacoesSection = () => {
@@ -49,7 +49,7 @@ const EspecificacoesSection = () => {
     <section id="especificacoes" className="py-20 md:py-32 bg-secondary/30 relative overflow-hidden">
       {/* Blueprint Background */}
       <div className="absolute inset-0 blueprint-grid opacity-20" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-semibold mb-4 animate-fade-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
@@ -93,8 +93,8 @@ const EspecificacoesSection = () => {
               Aplicações Recomendadas
             </h3>
             <p className="text-muted-foreground mb-8">
-              Nossas espátulas são desenvolvidas para atender às mais diversas 
-              necessidades de acabamento profissional:
+              Nossas espátulas são desenvolvidas para atender às mais diversas
+              necessidades de confeitaria e culinária profissional:
             </p>
             <div className="grid grid-cols-2 gap-4">
               {aplicacoes.map((app) => (
@@ -109,12 +109,12 @@ const EspecificacoesSection = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Technical Note */}
             <div className="mt-8 p-4 bg-primary/5 rounded-xl border border-primary/20">
               <p className="text-sm text-muted-foreground">
-                <strong className="text-foreground">Nota Técnica:</strong> Todas as 
-                especificações seguem padrões industriais rigorosos e são testadas 
+                <strong className="text-foreground">Nota Técnica:</strong> Todas as
+                especificações seguem padrões industriais rigorosos e são testadas
                 em laboratório para garantir máxima qualidade.
               </p>
             </div>

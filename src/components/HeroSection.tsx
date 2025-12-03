@@ -19,22 +19,22 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-primary/20 rounded-full mb-4 md:mb-6 animate-fade-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
               <span className="text-xs md:text-sm font-medium text-primary-foreground/90">
-                Ferramentas de Alta Performance
+                Utensílios Profissionais de Confeitaria
               </span>
             </div>
 
-            <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-4 md:mb-6 animate-fade-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
-              Espátulas Profissionais{" "}
-              <span className="text-gradient">TOTALPLAN</span>
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-4 md:mb-6 animate-fade-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+              Espátulas Culinárias{" "}
+              <span className="text-gradient">TOTALPAN</span>
               <br />
-              <span className="text-xl md:text-3xl lg:text-4xl font-normal text-primary-foreground/80">
-                Precisão que Transforma o Acabamento
+              <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-primary-foreground/80">
+                Precisão que Transforma suas Criações
               </span>
             </h1>
 
             <p className="text-base md:text-lg text-primary-foreground/70 mb-6 md:mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
-              Ferramentas de alta performance desenvolvidas para profissionais que exigem
-              qualidade, durabilidade e acabamento perfeito.
+              Utensílios de alta performance desenvolvidos para confeiteiros e chefs que exigem
+              qualidade, durabilidade e precisão perfeita em cada criação.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
@@ -56,7 +56,7 @@ const HeroSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-glow">
               <img
                 src={heroImage}
-                alt="Espátula Profissional TotalPlan"
+                alt="Espátula Culinária Profissional Totalpan"
                 className="w-full h-auto object-cover animate-float"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary/50 to-transparent" />

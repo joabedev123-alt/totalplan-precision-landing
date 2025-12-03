@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <img src={logo} alt="TotalPlan Logo" className="h-12 w-auto mb-4" />
+            <img src={logo} alt="Totalpan Logo" className="h-12 w-auto mb-4" />
             <p className="text-primary-foreground/70 mb-6 max-w-md">
-              Espátulas profissionais de alta performance para profissionais que
-              exigem qualidade, durabilidade e acabamento perfeito.
+              Espátulas profissionais de alta performance para confeiteiros e chefs que
+              exigem qualidade, durabilidade e precisão perfeita.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/60">
               <FileText className="w-4 h-4" />
@@ -73,22 +73,8 @@ const Footer = () => {
                   Catálogo
                 </a>
               </li>
-              <li>
-                <a
-                  href="#especificacoes"
-                  className="text-primary-foreground/70 hover:text-primary transition-colors"
-                >
-                  Especificações
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#faq"
-                  className="text-primary-foreground/70 hover:text-primary transition-colors"
-                >
-                  FAQ
-                </a>
-              </li>
+
+
               <li>
                 <a
                   href="#contato"
@@ -107,10 +93,10 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © {new Date().getFullYear()} TotalPlan. Todos os direitos reservados.
+              © {new Date().getFullYear()} Totalpan. Todos os direitos reservados.
             </p>
             <p className="text-sm text-primary-foreground/60">
-              Ferramentas profissionais para acabamento de qualidade
+              Utensílios profissionais para confeitaria e culinária de qualidade
             </p>
           </div>
         </div>

@@ -57,12 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        totalplan: {
-          blue: "hsl(var(--totalplan-blue))",
-          navy: "hsl(var(--totalplan-navy))",
-          steel: "hsl(var(--totalplan-steel))",
-          black: "hsl(var(--totalplan-black))",
-          white: "hsl(var(--totalplan-white))",
+        totalpan: {
+          blue: "hsl(var(--totalpan-blue))",
+          navy: "hsl(var(--totalpan-navy))",
+          steel: "hsl(var(--totalpan-steel))",
+          black: "hsl(var(--totalpan-black))",
+          white: "hsl(var(--totalpan-white))",
         },
       },
       fontFamily: {

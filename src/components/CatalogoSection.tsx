@@ -23,127 +23,127 @@ import spatula21 from "@/assets/spatulas past/21.jpg";
 const produtos = [
   {
     id: 1,
-    nome: "Espátula Profissional 8cm",
-    descricao: "Ideal para acabamentos detalhados e áreas de difícil acesso em trabalhos de precisão.",
+    nome: "Espátula para Confeitaria 8cm",
+    descricao: "Ideal para decorações delicadas, detalhes em bolos e trabalhos de precisão em confeitaria.",
     beneficios: ["Precisão máxima", "Lâmina temperada", "Cabo ergonômico"],
     imagem: spatula01,
   },
   {
     id: 2,
     nome: "Espátula Multiuso 10cm",
-    descricao: "Perfeita para aplicações gerais e trabalhos que exigem controle e agilidade.",
+    descricao: "Perfeita para espalhamento de coberturas, glacês e trabalhos gerais na cozinha.",
     beneficios: ["Uso versátil", "Alta resistência", "Flexibilidade ideal"],
     imagem: spatula02,
   },
   {
     id: 3,
-    nome: "Espátula para Massa Corrida 12cm",
-    descricao: "Desenvolvida especialmente para aplicação uniforme de massa corrida e texturas.",
+    nome: "Espátula para Bolos 12cm",
+    descricao: "Desenvolvida especialmente para cobrir bolos com chantilly, ganache e coberturas cremosas.",
     beneficios: ["Distribuição uniforme", "Lâmina larga", "Acabamento liso"],
     imagem: spatula003,
   },
   {
     id: 4,
-    nome: "Espátula Profissional 15cm",
-    descricao: "Tamanho intermediário ideal para trabalhos de média escala com excelente cobertura.",
+    nome: "Espátula para Glacê 15cm",
+    descricao: "Tamanho intermediário ideal para aplicação de glacê e coberturas em bolos de médio porte.",
     beneficios: ["Cobertura eficiente", "Equilíbrio perfeito", "Durabilidade"],
     imagem: spatula04,
   },
   {
     id: 5,
-    nome: "Espátula Industrial 20cm",
-    descricao: "Para grandes superfícies e trabalhos que demandam produtividade e resistência.",
-    beneficios: ["Grande cobertura", "Alta produtividade", "Durabilidade extrema"],
+    nome: "Espátula para Chapa 20cm",
+    descricao: "Para uso em chapas quentes, ideal para hambúrgueres, panquecas e trabalhos em grelha.",
+    beneficios: ["Grande cobertura", "Alta produtividade", "Resistência ao calor"],
     imagem: spatula05,
   },
   {
     id: 6,
-    nome: "Espátula para Acabamento 25cm",
-    descricao: "Excelente para acabamentos finais em grandes áreas com precisão profissional.",
+    nome: "Espátula para Tortas 25cm",
+    descricao: "Excelente para cobrir tortas grandes e bolos de festa com precisão profissional.",
     beneficios: ["Acabamento premium", "Lâmina extra larga", "Controle superior"],
     imagem: spatula06,
   },
   {
     id: 7,
-    nome: "Espátula Industrial 30cm",
-    descricao: "Máxima cobertura para trabalhos de grande escala e alta demanda profissional.",
+    nome: "Espátula para Confeitaria 30cm",
+    descricao: "Máxima cobertura para bolos de casamento e trabalhos de grande escala em confeitaria.",
     beneficios: ["Máxima cobertura", "Produtividade elevada", "Resistência superior"],
     imagem: spatula09,
   },
   {
     id: 8,
-    nome: "Espátula para Epóxi 10cm",
-    descricao: "Especializada para aplicação de resina epóxi e revestimentos de alta performance.",
-    beneficios: ["Resistente a químicos", "Lâmina especial", "Acabamento premium"],
+    nome: "Espátula Angular 10cm",
+    descricao: "Especializada para acabamentos em cantos e laterais de bolos com ângulo perfeito.",
+    beneficios: ["Ângulo especial", "Lâmina flexível", "Acabamento premium"],
     imagem: spatula10,
   },
   {
     id: 9,
     nome: "Espátula Flexível 12cm",
-    descricao: "Flexibilidade superior para acabamentos delicados e superfícies irregulares.",
+    descricao: "Flexibilidade superior para trabalhos delicados, mousses e sobremesas cremosas.",
     beneficios: ["Ultra flexível", "Controle preciso", "Cantos arredondados"],
     imagem: spatula11,
   },
   {
     id: 10,
-    nome: "Espátula para Cimento Queimado 15cm",
-    descricao: "Desenvolvida especialmente para aplicação e acabamento de cimento queimado.",
-    beneficios: ["Textura perfeita", "Resistência química", "Acabamento profissional"],
+    nome: "Espátula para Massas 15cm",
+    descricao: "Desenvolvida especialmente para trabalhar massas, pastas e preparações densas.",
+    beneficios: ["Textura perfeita", "Resistência", "Acabamento profissional"],
     imagem: spatula12,
   },
   {
     id: 11,
     nome: "Espátula Dentada 10cm",
-    descricao: "Com dentes especiais para aplicação de argamassa e adesivos de piso e azulejo.",
-    beneficios: ["Aplicação uniforme", "Dentes precisos", "Economia de material"],
+    descricao: "Com dentes especiais para criar texturas decorativas em coberturas e glacês.",
+    beneficios: ["Efeitos decorativos", "Dentes precisos", "Criatividade"],
     imagem: spatula13,
   },
   {
     id: 13,
-    nome: "Espátula para Textura 20cm",
-    descricao: "Perfeita para criar texturas decorativas e acabamentos artísticos em paredes.",
-    beneficios: ["Efeitos especiais", "Lâmina flexível", "Criatividade"],
+    nome: "Espátula para Buttercream 20cm",
+    descricao: "Perfeita para aplicar e alisar buttercream em bolos com acabamento profissional.",
+    beneficios: ["Acabamento liso", "Lâmina flexível", "Controle total"],
     imagem: spatula15,
   },
   {
     id: 14,
     nome: "Espátula de Canto 8cm",
-    descricao: "Formato especial para acabamentos perfeitos em cantos internos e externos.",
+    descricao: "Formato especial para acabamentos perfeitos em cantos e bordas de bolos.",
     beneficios: ["Cantos perfeitos", "Design especial", "Precisão absoluta"],
     imagem: spatula16,
   },
   {
     id: 15,
-    nome: "Espátula para Gesso 25cm",
-    descricao: "Ideal para aplicação e acabamento de gesso em paredes e forros.",
+    nome: "Espátula para Chantilly 25cm",
+    descricao: "Ideal para aplicação e acabamento de chantilly em bolos e tortas.",
     beneficios: ["Superfície lisa", "Lâmina larga", "Acabamento impecável"],
     imagem: spatula17,
   },
   {
     id: 16,
     nome: "Espátula Profissional Inox 12cm",
-    descricao: "Fabricada em aço inoxidável de alta qualidade para máxima durabilidade.",
-    beneficios: ["Aço inoxidável", "Antiferrugem", "Vida útil prolongada"],
+    descricao: "Fabricada em aço inoxidável de alta qualidade, segura para alimentos e máxima durabilidade.",
+    beneficios: ["Aço inoxidável", "Food safe", "Vida útil prolongada"],
     imagem: spatula18,
   },
   {
     id: 17,
-    nome: "Espátula para Rejunte 10cm",
-    descricao: "Especialmente desenvolvida para aplicação e remoção de rejunte em pisos e azulejos.",
+    nome: "Espátula para Recheios 10cm",
+    descricao: "Especialmente desenvolvida para aplicação de recheios entre camadas de bolos.",
     beneficios: ["Aplicação precisa", "Lâmina resistente", "Fácil limpeza"],
     imagem: spatula19,
   },
   {
     id: 18,
-    nome: "Espátula Multiuso Premium 18cm",
-    descricao: "Versão premium com tecnologia avançada para profissionais exigentes.",
+    nome: "Espátula Premium para Confeitaria 18cm",
+    descricao: "Versão premium com tecnologia avançada para confeiteiros profissionais exigentes.",
     beneficios: ["Qualidade premium", "Tecnologia avançada", "Performance superior"],
     imagem: spatula20,
   },
   {
     id: 19,
-    nome: "Espátula para Acabamento Fino 15cm",
-    descricao: "Lâmina ultra fina para acabamentos delicados e superfícies que exigem perfeição.",
+    nome: "Espátula para Decoração 15cm",
+    descricao: "Lâmina ultra fina para decorações delicadas e acabamentos que exigem perfeição.",
     beneficios: ["Lâmina ultra fina", "Acabamento delicado", "Controle total"],
     imagem: spatula21,
   },
@@ -151,7 +151,7 @@ const produtos = [
 
 const CatalogoSection = () => {
   return (
-    <section id="catalogo" className="py-20 md:py-32 bg-background relative overflow-hidden">
+    <section id="catalogo" className="py-12 md:py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-semibold mb-4 animate-fade-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
@@ -161,7 +161,7 @@ const CatalogoSection = () => {
             Catálogo de <span className="text-gradient">Espátulas</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}>
-            Linha completa para todas as necessidades de acabamento profissional
+            Linha completa para todas as necessidades de confeitaria e culinária profissional
           </p>
         </div>
 

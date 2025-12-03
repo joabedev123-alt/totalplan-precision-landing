@@ -4,11 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import VantagensSection from "@/components/VantagensSection";
 import SobreSection from "@/components/SobreSection";
 import CatalogoSection from "@/components/CatalogoSection";
-import EspecificacoesSection from "@/components/EspecificacoesSection";
-import DepoimentosSection from "@/components/DepoimentosSection";
-import GarantiaSection from "@/components/GarantiaSection";
 import CTASection from "@/components/CTASection";
-import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -16,20 +12,20 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>TotalPlan - Espátulas Profissionais para Construção e Acabamento</title>
+        <title>Totalpan - Espátulas Profissionais para Confeitaria e Culinária</title>
         <meta
           name="description"
-          content="Espátulas profissionais de alta performance TotalPlan. Aço inoxidável premium, ergonomia e durabilidade para acabamento perfeito. Entrega para todo o Brasil."
+          content="Espátulas profissionais de alta performance Totalpan. Aço inoxidável premium, ergonomia e durabilidade para confeitaria, bolos, chapas e culinária profissional. Entrega para todo o Brasil."
         />
         <meta
           name="keywords"
-          content="espátulas profissionais, ferramentas construção, acabamento, massa corrida, epóxi, cimento queimado, TotalPlan"
+          content="espátulas culinárias, espátulas confeitaria, espátulas para bolos, espátulas chapa, utensílios culinários, ferramentas confeitaria, Totalpan"
         />
-        <link rel="canonical" href="https://totalplan.com.br" />
+        <link rel="canonical" href="https://totalpan.com.br" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="TotalPlan - Espátulas Profissionais" />
-        <meta property="og:description" content="Ferramentas de alta performance para profissionais que exigem qualidade e acabamento perfeito." />
+        <meta property="og:title" content="Totalpan - Espátulas Profissionais Culinárias" />
+        <meta property="og:description" content="Utensílios de alta performance para profissionais da confeitaria e culinária que exigem qualidade e precisão perfeita." />
         <meta property="og:type" content="website" />
 
         {/* Structured Data */}
@@ -37,9 +33,9 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "TotalPlan",
-            "description": "Espátulas profissionais de alta performance para construção e acabamento",
-            "url": "https://totalplan.com.br",
+            "name": "Totalpan",
+            "description": "Espátulas profissionais de alta performance para confeitaria, bolos e culinária",
+            "url": "https://totalpan.com.br",
             "telephone": "+5519994826736",
             "email": "vendas@rfcampanaro.com.br",
             "address": {
@@ -60,11 +56,7 @@ const Index = () => {
           <VantagensSection />
           <SobreSection />
           <CatalogoSection />
-          <EspecificacoesSection />
-          <DepoimentosSection />
-          <GarantiaSection />
           <CTASection />
-          <FAQSection />
         </main>
         <Footer />
         <WhatsAppButton />

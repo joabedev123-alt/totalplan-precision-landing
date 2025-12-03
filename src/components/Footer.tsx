@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, FileText } from "lucide-react";
+import logo from "/favicon1/Untitled.png";
 
 const Footer = () => {
   return (
@@ -7,11 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <h2 className="font-display text-2xl font-bold mb-4">
-              TOTAL<span className="text-primary">PLAN</span>
-            </h2>
+            <img src={logo} alt="TotalPlan Logo" className="h-12 w-auto mb-4" />
             <p className="text-primary-foreground/70 mb-6 max-w-md">
-              Espátulas profissionais de alta performance para profissionais que 
+              Espátulas profissionais de alta performance para profissionais que
               exigem qualidade, durabilidade e acabamento perfeito.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/60">

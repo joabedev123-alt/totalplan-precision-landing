@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import logo from "/favicon1/Untitled.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
 
   const navLinks = [
     { href: "#vantagens", label: "Vantagens" },
@@ -11,17 +13,27 @@ const Header = () => {
     { href: "#catalogo", label: "Catálogo" },
     { href: "#especificacoes", label: "Especificações" },
     { href: "#depoimentos", label: "Depoimentos" },
-    { href: "#faq", label: "FAQ" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsAtTop(scrollPosition < 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-primary/20">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-primary/20 transition-transform duration-300 ${isAtTop ? "translate-y-0" : "-translate-y-full"
+        }`}
+    >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           <a href="#" className="flex items-center gap-2">
-            <span className="font-display text-xl md:text-2xl font-bold text-primary-foreground tracking-wider">
-              TOTAL<span className="text-primary">PLAN</span>
-            </span>
+            <img src={logo} alt="TotalPlan Logo" className="h-16 md:h-20 w-auto" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
@@ -37,15 +49,8 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a
-              href="tel:+5519994826736"
-              className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              (19) 99482-6736
-            </a>
             <Button variant="hero" size="sm" asChild>
-              <a href="#contato">Orçamento</a>
+              <a href="#contato">Saber Mais</a>
             </Button>
           </div>
 
@@ -73,7 +78,7 @@ const Header = () => {
               </a>
             ))}
             <Button variant="hero" size="sm" className="w-full mt-2" asChild>
-              <a href="#contato">Solicitar Orçamento</a>
+              <a href="#contato">Saber Mais</a>
             </Button>
           </nav>
         </div>

@@ -10,27 +10,28 @@ import GarantiaSection from "@/components/GarantiaSection";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
     <>
       <Helmet>
         <title>TotalPlan - Espátulas Profissionais para Construção e Acabamento</title>
-        <meta 
-          name="description" 
+        <meta
+          name="description"
           content="Espátulas profissionais de alta performance TotalPlan. Aço inoxidável premium, ergonomia e durabilidade para acabamento perfeito. Entrega para todo o Brasil."
         />
-        <meta 
-          name="keywords" 
+        <meta
+          name="keywords"
           content="espátulas profissionais, ferramentas construção, acabamento, massa corrida, epóxi, cimento queimado, TotalPlan"
         />
         <link rel="canonical" href="https://totalplan.com.br" />
-        
+
         {/* Open Graph */}
         <meta property="og:title" content="TotalPlan - Espátulas Profissionais" />
         <meta property="og:description" content="Ferramentas de alta performance para profissionais que exigem qualidade e acabamento perfeito." />
         <meta property="og:type" content="website" />
-        
+
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -66,6 +67,7 @@ const Index = () => {
           <FAQSection />
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </>
   );

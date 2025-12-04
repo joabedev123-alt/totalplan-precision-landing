@@ -29,9 +29,9 @@ const Header = () => {
         }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-16 md:h-24">
           <a href="#" className="flex items-center gap-2">
-            <img src={logo} alt="Totalpan Logo" className="h-16 md:h-20 w-auto" />
+            <img src={logo} alt="Totalpan Logo" className="h-12 md:h-20 w-auto" />
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">

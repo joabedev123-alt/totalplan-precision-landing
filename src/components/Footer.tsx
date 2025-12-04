@@ -4,7 +4,7 @@ import logo from "/favicon1/Untitled.png";
 const Footer = () => {
   return (
     <footer className="bg-secondary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-10 md:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">

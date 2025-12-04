@@ -1,155 +1,373 @@
 import { Button } from "./ui/button";
 import { MessageCircle } from "lucide-react";
-import spatula01 from "@/assets/spatulas past/01.jpg";
-import spatula02 from "@/assets/spatulas past/02.jpg";
-import spatula003 from "@/assets/spatulas past/003.jpg";
-import spatula04 from "@/assets/spatulas past/04.jpg";
-import spatula05 from "@/assets/spatulas past/05.jpg";
-import spatula06 from "@/assets/spatulas past/06.jpg";
-import spatula09 from "@/assets/spatulas past/09.jpg";
-import spatula10 from "@/assets/spatulas past/10.jpg";
-import spatula11 from "@/assets/spatulas past/11.jpg";
-import spatula12 from "@/assets/spatulas past/12.jpg";
-import spatula13 from "@/assets/spatulas past/13.jpg";
 
-import spatula15 from "@/assets/spatulas past/15.jpg";
-import spatula16 from "@/assets/spatulas past/16.jpg";
-import spatula17 from "@/assets/spatulas past/17.jpg";
-import spatula18 from "@/assets/spatulas past/18.jpg";
-import spatula19 from "@/assets/spatulas past/19.jpg";
-import spatula20 from "@/assets/spatulas past/20.jpg";
-import spatula21 from "@/assets/spatulas past/21.jpg";
+// Import all product images dynamically
+const productImages = import.meta.glob('../pastadeprodutos/espatula para codificação/*.jpg', { eager: true, as: 'url' });
 
-const produtos = [
+const productsData = [
   {
-    id: 1,
-    nome: "Espátula para Confeitaria 8cm",
-    descricao: "Ideal para decorações delicadas, detalhes em bolos e trabalhos de precisão em confeitaria.",
-    beneficios: ["Precisão máxima", "Lâmina temperada", "Cabo ergonômico"],
-    imagem: spatula01,
+    "id": "1150",
+    "nome": "Espátula Profissional 1150",
+    "descricao": "Construção",
+    "sizes": [
+      "06"
+    ],
+    "image": "1150-06.jpg"
   },
   {
-    id: 2,
-    nome: "Espátula Multiuso 10cm",
-    descricao: "Perfeita para espalhamento de coberturas, glacês e trabalhos gerais na cozinha.",
-    beneficios: ["Uso versátil", "Alta resistência", "Flexibilidade ideal"],
-    imagem: spatula02,
+    "id": "1414",
+    "nome": "Espátula Profissional 1414",
+    "descricao": "Lanche",
+    "sizes": [
+      "12"
+    ],
+    "image": "1414-12.jpg"
   },
   {
-    id: 3,
-    nome: "Espátula para Bolos 12cm",
-    descricao: "Desenvolvida especialmente para cobrir bolos com chantilly, ganache e coberturas cremosas.",
-    beneficios: ["Distribuição uniforme", "Lâmina larga", "Acabamento liso"],
-    imagem: spatula003,
+    "id": "1501",
+    "nome": "Espátula Profissional 1501",
+    "descricao": "Lanche",
+    "sizes": [
+      "10",
+      "12"
+    ],
+    "image": "1501-10  ou  1501-12.jpg"
   },
   {
-    id: 4,
-    nome: "Espátula para Glacê 15cm",
-    descricao: "Tamanho intermediário ideal para aplicação de glacê e coberturas em bolos de médio porte.",
-    beneficios: ["Cobertura eficiente", "Equilíbrio perfeito", "Durabilidade"],
-    imagem: spatula04,
+    "id": "1502",
+    "nome": "Espátula Profissional 1502",
+    "descricao": "Lanche",
+    "sizes": [
+      "10",
+      "12"
+    ],
+    "image": "1502-10 ou 1502-12.jpg"
   },
   {
-    id: 5,
-    nome: "Espátula para Chapa 20cm",
-    descricao: "Para uso em chapas quentes, ideal para hambúrgueres, panquecas e trabalhos em grelha.",
-    beneficios: ["Grande cobertura", "Alta produtividade", "Resistência ao calor"],
-    imagem: spatula05,
+    "id": "1505",
+    "nome": "Espátula Profissional 1505",
+    "descricao": "Churrasco",
+    "sizes": [
+      "05"
+    ],
+    "image": "1505-05.jpg"
   },
   {
-    id: 6,
-    nome: "Espátula para Tortas 25cm",
-    descricao: "Excelente para cobrir tortas grandes e bolos de festa com precisão profissional.",
-    beneficios: ["Acabamento premium", "Lâmina extra larga", "Controle superior"],
-    imagem: spatula06,
+    "id": "1508",
+    "nome": "Espátula Profissional 1508",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "10",
+      "15",
+      "25"
+    ],
+    "image": "1508-10.jpg"
   },
   {
-    id: 7,
-    nome: "Espátula para Confeitaria 30cm",
-    descricao: "Máxima cobertura para bolos de casamento e trabalhos de grande escala em confeitaria.",
-    beneficios: ["Máxima cobertura", "Produtividade elevada", "Resistência superior"],
-    imagem: spatula09,
+    "id": "1510",
+    "nome": "Espátula Profissional 1510",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "06"
+    ],
+    "image": "1510-06.jpg"
   },
   {
-    id: 8,
-    nome: "Espátula Angular 10cm",
-    descricao: "Especializada para acabamentos em cantos e laterais de bolos com ângulo perfeito.",
-    beneficios: ["Ângulo especial", "Lâmina flexível", "Acabamento premium"],
-    imagem: spatula10,
+    "id": "1514",
+    "nome": "Espátula Profissional 1514",
+    "descricao": "Lanche",
+    "sizes": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "image": "1514-10 (2).jpg"
   },
   {
-    id: 9,
-    nome: "Espátula Flexível 12cm",
-    descricao: "Flexibilidade superior para trabalhos delicados, mousses e sobremesas cremosas.",
-    beneficios: ["Ultra flexível", "Controle preciso", "Cantos arredondados"],
-    imagem: spatula11,
+    "id": "1518",
+    "nome": "Espátula Profissional 1518",
+    "descricao": "Chapa",
+    "sizes": [
+      "11"
+    ],
+    "image": "1518-11.jpg"
   },
   {
-    id: 10,
-    nome: "Espátula para Massas 15cm",
-    descricao: "Desenvolvida especialmente para trabalhar massas, pastas e preparações densas.",
-    beneficios: ["Textura perfeita", "Resistência", "Acabamento profissional"],
-    imagem: spatula12,
+    "id": "1519",
+    "nome": "Espátula Profissional 1519",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "14",
+      "16"
+    ],
+    "image": "1519-08.jpg"
   },
   {
-    id: 11,
-    nome: "Espátula Dentada 10cm",
-    descricao: "Com dentes especiais para criar texturas decorativas em coberturas e glacês.",
-    beneficios: ["Efeitos decorativos", "Dentes precisos", "Criatividade"],
-    imagem: spatula13,
+    "id": "1601",
+    "nome": "Espátula Profissional 1601",
+    "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
+    "sizes": [
+      "10",
+      "12"
+    ],
+    "image": "1601-10.jpg"
   },
   {
-    id: 13,
-    nome: "Espátula para Buttercream 20cm",
-    descricao: "Perfeita para aplicar e alisar buttercream em bolos com acabamento profissional.",
-    beneficios: ["Acabamento liso", "Lâmina flexível", "Controle total"],
-    imagem: spatula15,
+    "id": "1602",
+    "nome": "Espátula Profissional 1602",
+    "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
+    "sizes": [
+      "10",
+      "12"
+    ],
+    "image": "1602-10.jpg"
   },
   {
-    id: 14,
-    nome: "Espátula de Canto 8cm",
-    descricao: "Formato especial para acabamentos perfeitos em cantos e bordas de bolos.",
-    beneficios: ["Cantos perfeitos", "Design especial", "Precisão absoluta"],
-    imagem: spatula16,
+    "id": "1610",
+    "nome": "Espátula Profissional 1610",
+    "descricao": "Congelador",
+    "sizes": [
+      "04"
+    ],
+    "image": "1610-04.jpg"
   },
   {
-    id: 15,
-    nome: "Espátula para Chantilly 25cm",
-    descricao: "Ideal para aplicação e acabamento de chantilly em bolos e tortas.",
-    beneficios: ["Superfície lisa", "Lâmina larga", "Acabamento impecável"],
-    imagem: spatula17,
+    "id": "1614",
+    "nome": "Espátula Profissional 1614",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "10",
+      "12"
+    ],
+    "image": "1614-08.jpg"
   },
   {
-    id: 16,
-    nome: "Espátula Profissional Inox 12cm",
-    descricao: "Fabricada em aço inoxidável de alta qualidade, segura para alimentos e máxima durabilidade.",
-    beneficios: ["Aço inoxidável", "Food safe", "Vida útil prolongada"],
-    imagem: spatula18,
+    "id": "1619",
+    "nome": "Espátula Profissional 1619",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "10",
+      "12"
+    ],
+    "image": "1619-08.jpg"
   },
   {
-    id: 17,
-    nome: "Espátula para Recheios 10cm",
-    descricao: "Especialmente desenvolvida para aplicação de recheios entre camadas de bolos.",
-    beneficios: ["Aplicação precisa", "Lâmina resistente", "Fácil limpeza"],
-    imagem: spatula19,
+    "id": "1714",
+    "nome": "Espátula Profissional 1714",
+    "descricao": "Lanche",
+    "sizes": [
+      "12"
+    ],
+    "image": "1714-12.jpg"
   },
   {
-    id: 18,
-    nome: "Espátula Premium para Confeitaria 18cm",
-    descricao: "Versão premium com tecnologia avançada para confeiteiros profissionais exigentes.",
-    beneficios: ["Qualidade premium", "Tecnologia avançada", "Performance superior"],
-    imagem: spatula20,
+    "id": "1715",
+    "nome": "Espátula Profissional 1715",
+    "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
+    "sizes": [
+      "12"
+    ],
+    "image": "1715-12.jpg"
   },
   {
-    id: 19,
-    nome: "Espátula para Decoração 15cm",
-    descricao: "Lâmina ultra fina para decorações delicadas e acabamentos que exigem perfeição.",
-    beneficios: ["Lâmina ultra fina", "Acabamento delicado", "Controle total"],
-    imagem: spatula21,
+    "id": "2505",
+    "nome": "Espátula Profissional 2505",
+    "descricao": "Torta",
+    "sizes": [
+      "06"
+    ],
+    "image": "2505-06.jpg"
   },
+  {
+    "id": "2511",
+    "nome": "Espátula Profissional 2511",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "05"
+    ],
+    "image": "2511-05.jpg"
+  },
+  {
+    "id": "2515",
+    "nome": "Espátula Profissional 2515",
+    "descricao": "Descamar",
+    "sizes": [
+      "07"
+    ],
+    "image": "2515-07 (1).jpg"
+  },
+  {
+    "id": "2517",
+    "nome": "Espátula Profissional 2517",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "17"
+    ],
+    "image": "2517-17.jpg"
+  },
+  {
+    "id": "2518",
+    "nome": "Espátula Profissional 2518",
+    "descricao": "Lanche",
+    "sizes": [
+      "14"
+    ],
+    "image": "2518-14.jpg"
+  },
+  {
+    "id": "2520",
+    "nome": "Espátula Profissional 2520",
+    "descricao": "Peixe",
+    "sizes": [
+      "06"
+    ],
+    "image": "2520-06.jpg"
+  },
+  {
+    "id": "2521",
+    "nome": "Espátula Profissional 2521",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "15",
+      "20"
+    ],
+    "image": "2521-15.jpg"
+  },
+  {
+    "id": "2522",
+    "nome": "Espátula Profissional 2522",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "15",
+      "20"
+    ],
+    "image": "2522-15(2).jpg"
+  },
+  {
+    "id": "2526",
+    "nome": "Espátula Profissional 2526",
+    "descricao": "Esfiha",
+    "sizes": [
+      "12"
+    ],
+    "image": "2526-12.jpg"
+  },
+  {
+    "id": "2527",
+    "nome": "Espátula Profissional 2527",
+    "descricao": "Esfiha",
+    "sizes": [
+      "12"
+    ],
+    "image": "2527-12.jpg"
+  },
+  {
+    "id": "2530",
+    "nome": "Espátula Profissional 2530",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "40"
+    ],
+    "image": "2530-40.jpg"
+  },
+  {
+    "id": "2536",
+    "nome": "Espátula Profissional 2536",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "30"
+    ],
+    "image": "2536-30.jpg"
+  },
+  {
+    "id": "4520",
+    "nome": "Espátula Profissional 4520",
+    "descricao": "Fiambre",
+    "sizes": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "image": "4520-10.jpg"
+  },
+  {
+    "id": "6510",
+    "nome": "Espátula Profissional 6510",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "10"
+    ],
+    "image": "6510-10.jpg"
+  },
+  {
+    "id": "6516",
+    "nome": "Espátula Profissional 6516",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "50"
+    ],
+    "image": "6516-50.jpg"
+  },
+  {
+    "id": "6520",
+    "nome": "Espátula Profissional 6520",
+    "descricao": "Panificação",
+    "sizes": [
+      "05"
+    ],
+    "image": "6520-05.jpg"
+  },
+  {
+    "id": "6530",
+    "nome": "Espátula Profissional 6530",
+    "descricao": "Panificação",
+    "sizes": [
+      "05"
+    ],
+    "image": "6530-05.jpg"
+  },
+  {
+    "id": "6550",
+    "nome": "Espátula Profissional 6550",
+    "descricao": "Panificação",
+    "sizes": [
+      "05"
+    ],
+    "image": "6550-05.jpg"
+  },
+  {
+    "id": "9510",
+    "nome": "Espátula Profissional 9510",
+    "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
+    "sizes": [
+      "10",
+      "11"
+    ],
+    "image": "9510-10.jpg"
+  },
+  {
+    "id": "9512",
+    "nome": "Espátula Profissional 9512",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "30"
+    ],
+    "image": "9512-30.jpg"
+  }
 ];
 
 const CatalogoSection = () => {
+  const getImageUrl = (filename: string) => {
+    // Construct the key matching the glob pattern
+    const key = `../pastadeprodutos/espatula para codificação/${filename}`;
+    return productImages[key] as string;
+  };
+
   return (
     <section id="catalogo" className="py-12 md:py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -166,51 +384,60 @@ const CatalogoSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {produtos.map((produto, index) => (
+          {productsData.map((produto, index) => (
             <div
               key={produto.id}
               className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 shadow-card hover:shadow-card-hover animate-fade-up opacity-0"
               style={{ animationDelay: `${0.1 * (index + 1)}s`, animationFillMode: "forwards" }}
             >
               {/* Image Container */}
-              <div className="relative h-56 overflow-hidden bg-muted">
+              <div className="relative h-48 md:h-64 overflow-hidden bg-muted flex items-center justify-center p-4">
                 <img
-                  src={produto.imagem}
+                  src={getImageUrl(produto.image)}
                   alt={produto.nome}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-display text-lg font-bold text-foreground mb-2">
-                  {produto.nome}
-                </h3>
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="font-display text-lg font-bold text-foreground">
+                    {produto.nome}
+                  </h3>
+                  <span className="text-xs font-mono bg-muted px-2 py-1 rounded text-muted-foreground">
+                    Ref: {produto.id}
+                  </span>
+                </div>
+
                 <p className="text-muted-foreground text-sm mb-4">
                   {produto.descricao}
                 </p>
 
-                {/* Benefits */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {produto.beneficios.map((beneficio) => (
-                    <span
-                      key={beneficio}
-                      className="inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full"
-                    >
-                      {beneficio}
-                    </span>
-                  ))}
+                {/* Sizes */}
+                <div className="mb-6">
+                  <span className="text-xs font-semibold text-foreground uppercase tracking-wider block mb-2">Tamanhos Disponíveis:</span>
+                  <div className="flex flex-wrap gap-2">
+                    {produto.sizes.map((size) => (
+                      <span
+                        key={size}
+                        className="inline-flex items-center px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md border border-primary/20"
+                      >
+                        {size} cm
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 <Button variant="outline" className="w-full group/btn" asChild>
                   <a
-                    href={`https://wa.me/5519994826736?text=Olá! Tenho interesse na ${produto.nome}`}
+                    href={`https://wa.me/5519994826736?text=Olá! Tenho interesse na ${produto.nome} (Ref: ${produto.id})`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <MessageCircle className="w-4 h-4 group-hover/btn:scale-110 transition-transform" />
-                    Quero este modelo
+                    Cotar no WhatsApp
                   </a>
                 </Button>
               </div>

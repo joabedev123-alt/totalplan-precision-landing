@@ -10,7 +10,12 @@ const productsData = [
     "nome": "Espátula Profissional 1150",
     "descricao": "Construção",
     "sizes": [
-      "06"
+      "02",
+      "04",
+      "06",
+      "08",
+      "10",
+      "12"
     ],
     "image": "1150-06.jpg"
   },
@@ -19,7 +24,10 @@ const productsData = [
     "nome": "Espátula Profissional 1414",
     "descricao": "Lanche",
     "sizes": [
-      "12"
+      "08",
+      "10",
+      "12",
+      "14"
     ],
     "image": "1414-12.jpg"
   },
@@ -45,7 +53,7 @@ const productsData = [
   },
   {
     "id": "1505",
-    "nome": "Espátula Profissional 1505",
+    "nome": "GARRA DE URSO PARA CARNES",
     "descricao": "Churrasco",
     "sizes": [
       "05"
@@ -77,6 +85,7 @@ const productsData = [
     "nome": "Espátula Profissional 1514",
     "descricao": "Lanche",
     "sizes": [
+      "08",
       "10",
       "12",
       "14",
@@ -86,7 +95,7 @@ const productsData = [
   },
   {
     "id": "1518",
-    "nome": "Espátula Profissional 1518",
+    "nome": "ESPÁTULA HAMBURGUER",
     "descricao": "Chapa",
     "sizes": [
       "11"
@@ -99,6 +108,8 @@ const productsData = [
     "descricao": "Lanche",
     "sizes": [
       "08",
+      "10",
+      "12",
       "14",
       "16"
     ],
@@ -126,7 +137,7 @@ const productsData = [
   },
   {
     "id": "1610",
-    "nome": "Espátula Profissional 1610",
+    "nome": "ESPÁTULA RASPAR CONGELADOR",
     "descricao": "Congelador",
     "sizes": [
       "04"
@@ -157,7 +168,7 @@ const productsData = [
   },
   {
     "id": "1714",
-    "nome": "Espátula Profissional 1714",
+    "nome": "DESTACAR O CABO DE BAQUELITE RESISTENTE À ALTAS TEMPERATURAS",
     "descricao": "Lanche",
     "sizes": [
       "12"
@@ -196,6 +207,7 @@ const productsData = [
     "nome": "Espátula Profissional 2515",
     "descricao": "Descamar",
     "sizes": [
+      "05",
       "07"
     ],
     "image": "2515-07 (1).jpg"
@@ -214,16 +226,17 @@ const productsData = [
     "nome": "Espátula Profissional 2518",
     "descricao": "Lanche",
     "sizes": [
+      "12",
       "14"
     ],
     "image": "2518-14.jpg"
   },
   {
     "id": "2520",
-    "nome": "Espátula Profissional 2520",
+    "nome": "ESPÁTULA FRITURA",
     "descricao": "Peixe",
     "sizes": [
-      "06"
+      "07"
     ],
     "image": "2520-06.jpg"
   },
@@ -232,6 +245,7 @@ const productsData = [
     "nome": "Espátula Profissional 2521",
     "descricao": "Confeitaria",
     "sizes": [
+      "10",
       "15",
       "20"
     ],
@@ -242,6 +256,7 @@ const productsData = [
     "nome": "Espátula Profissional 2522",
     "descricao": "Confeitaria",
     "sizes": [
+      "10",
       "15",
       "20"
     ],
@@ -270,6 +285,12 @@ const productsData = [
     "nome": "Espátula Profissional 2530",
     "descricao": "Confeitaria",
     "sizes": [
+      "10",
+      "15",
+      "20",
+      "25",
+      "30",
+      "35",
       "40"
     ],
     "image": "2530-40.jpg"
@@ -279,7 +300,13 @@ const productsData = [
     "nome": "Espátula Profissional 2536",
     "descricao": "Confeitaria",
     "sizes": [
-      "30"
+      "15",
+      "20",
+      "25",
+      "30",
+      "35",
+      "40",
+      "45"
     ],
     "image": "2536-30.jpg"
   },
@@ -315,7 +342,7 @@ const productsData = [
   },
   {
     "id": "6520",
-    "nome": "Espátula Profissional 6520",
+    "nome": "CARRETILHA CORTAR MASSAS",
     "descricao": "Panificação",
     "sizes": [
       "05"
@@ -324,7 +351,7 @@ const productsData = [
   },
   {
     "id": "6530",
-    "nome": "Espátula Profissional 6530",
+    "nome": "CARRETILHA FECHAR MASSAS",
     "descricao": "Panificação",
     "sizes": [
       "05"
@@ -333,7 +360,7 @@ const productsData = [
   },
   {
     "id": "6550",
-    "nome": "Espátula Profissional 6550",
+    "nome": "CARRETINHA DUPLA CORTAR E FECHAR MASSAS",
     "descricao": "Panificação",
     "sizes": [
       "05"
@@ -352,7 +379,7 @@ const productsData = [
   },
   {
     "id": "9512",
-    "nome": "Espátula Profissional 9512",
+    "nome": "PLACA SALVA BOLO ou PARA PIZZAS",
     "descricao": "Confeitaria",
     "sizes": [
       "30"

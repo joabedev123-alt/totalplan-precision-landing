@@ -8,8 +8,6 @@ const Header = () => {
   const [isAtTop, setIsAtTop] = useState(true);
 
   const navLinks = [
-    { href: "#vantagens", label: "Vantagens" },
-    { href: "#sobre", label: "Sobre" },
     { href: "#catalogo", label: "Catálogo" },
   ];
 

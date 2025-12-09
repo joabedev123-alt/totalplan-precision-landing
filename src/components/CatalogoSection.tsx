@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 // Import all product images dynamically
 const productImages = import.meta.glob('../pastadeprodutos/espatula para codificação/*.jpg', { eager: true, as: 'url' });
@@ -8,7 +8,7 @@ const productsData = [
   {
     "id": "1150",
     "nome": "Espátula Profissional 1150",
-    "descricao": "Construção",
+    "descricao": "Construção/Pintura",
     "sizes": [
       "02",
       "04",
@@ -56,7 +56,7 @@ const productsData = [
     "nome": "GARRA DE URSO PARA CARNES",
     "descricao": "Churrasco",
     "sizes": [
-      "05"
+      "12"
     ],
     "image": "1505-05.jpg"
   },
@@ -66,6 +66,8 @@ const productsData = [
     "descricao": "Pizzaria",
     "sizes": [
       "10",
+      "11",
+      "12",
       "15",
       "25"
     ],
@@ -76,7 +78,9 @@ const productsData = [
     "nome": "Espátula Profissional 1510",
     "descricao": "Pizzaria",
     "sizes": [
-      "06"
+      "06",
+      "10",
+      "12"
     ],
     "image": "1510-06.jpg"
   },
@@ -96,9 +100,9 @@ const productsData = [
   {
     "id": "1518",
     "nome": "ESPÁTULA HAMBURGUER",
-    "descricao": "Chapa",
+    "descricao": "Chapa/Hamburguer",
     "sizes": [
-      "11"
+      "Tamanho Único"
     ],
     "image": "1518-11.jpg"
   },
@@ -168,7 +172,7 @@ const productsData = [
   },
   {
     "id": "1714",
-    "nome": "DESTACAR O CABO DE BAQUELITE RESISTENTE À ALTAS TEMPERATURAS",
+    "nome": "CABO DE BAQUELITE RESISTENTE À ALTAS TEMPERATURAS",
     "descricao": "Lanche",
     "sizes": [
       "12"
@@ -215,7 +219,7 @@ const productsData = [
   {
     "id": "2517",
     "nome": "Espátula Profissional 2517",
-    "descricao": "Pizzaria",
+    "descricao": "Pizzaria / Cortar e Servir",
     "sizes": [
       "17"
     ],
@@ -236,7 +240,7 @@ const productsData = [
     "nome": "ESPÁTULA FRITURA",
     "descricao": "Peixe",
     "sizes": [
-      "07"
+      "Tamanho Único"
     ],
     "image": "2520-06.jpg"
   },
@@ -296,11 +300,10 @@ const productsData = [
     "image": "2530-40.jpg"
   },
   {
-    "id": "2536",
-    "nome": "Espátula Profissional 2536",
+    "id": "3528",
+    "nome": "Espátula Profissional 3528",
     "descricao": "Confeitaria",
     "sizes": [
-      "15",
       "20",
       "25",
       "30",
@@ -372,8 +375,7 @@ const productsData = [
     "nome": "Espátula Profissional 9510",
     "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
     "sizes": [
-      "10",
-      "11"
+      "Tamanho Único"
     ],
     "image": "9510-10.jpg"
   },
@@ -422,6 +424,7 @@ const CatalogoSection = () => {
                 <img
                   src={getImageUrl(produto.image)}
                   alt={produto.nome}
+                  loading="lazy"
                   className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -451,7 +454,7 @@ const CatalogoSection = () => {
                         key={size}
                         className="inline-flex items-center px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md border border-primary/20"
                       >
-                        {size} cm
+                        {size === "Tamanho Único" ? size : `${size} cm`}
                       </span>
                     ))}
                   </div>
@@ -463,7 +466,7 @@ const CatalogoSection = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MessageCircle className="w-4 h-4 group-hover/btn:scale-110 transition-transform" />
+                    <FaWhatsapp className="w-4 h-4 group-hover/btn:scale-110 transition-transform" />
                     Cotar no WhatsApp
                   </a>
                 </Button>

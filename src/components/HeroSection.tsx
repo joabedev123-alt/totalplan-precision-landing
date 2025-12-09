@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "./ui/button";
 import heroImage from "@/assets/hero-spatula1/01.jpg";
 
@@ -49,7 +49,7 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
+                <FaWhatsapp className="w-5 h-5 mr-2" />
                 Falar no WhatsApp
               </a>
             </Button>

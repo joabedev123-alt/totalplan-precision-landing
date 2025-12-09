@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
-import { MessageCircle, ArrowRight, Check, Truck, Clock, Phone } from "lucide-react";
+import { ArrowRight, Check, Truck, Clock, Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const CTASection = () => {
   return (
@@ -52,7 +53,7 @@ const CTASection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="w-5 h-5" />
+                <FaWhatsapp className="w-5 h-5 mr-2" />
                 Falar no WhatsApp
               </a>
             </Button>

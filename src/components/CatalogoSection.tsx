@@ -226,7 +226,7 @@ const productsData = [
   },
   {
     "id": "1715",
-    "nome": "Espátula Profissional 1715",
+    "nome": "CABO DE BAQUELITE RESISTENTE À ALTAS TEMPERATURAS 1715",
     "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
     "sizes": [
       "12"
@@ -290,7 +290,7 @@ const productsData = [
   },
   {
     "id": "2504-01",
-    "nome": "Espátula Profissional 2504-01",
+    "nome": "Banhar Profissional 2504-01",
     "descricao": "Confeitaria",
     "sizes": [
       "Tamanho Único"
@@ -299,7 +299,7 @@ const productsData = [
   },
   {
     "id": "2504-02",
-    "nome": "Espátula Profissional 2504-02",
+    "nome": "Garfo Banhar duas pontas 2504-02",
     "descricao": "Confeitaria",
     "sizes": [
       "Tamanho Único"
@@ -308,7 +308,7 @@ const productsData = [
   },
   {
     "id": "2504-03",
-    "nome": "Espátula Profissional 2504-03",
+    "nome": "Garfo Banhar três pontas 2504-03",
     "descricao": "Confeitaria",
     "sizes": [
       "Tamanho Único"
@@ -347,7 +347,7 @@ const productsData = [
     "nome": "ESPÁTULA LAZANHA",
     "descricao": "Cozinha",
     "sizes": [
-      "Tamanho Único"
+      "Tamanho Único 7cm"
     ],
     "image": "2514-07.jpg"
   },
@@ -537,7 +537,7 @@ const productsData = [
     "nome": "ESPÁTULA MANTEIGA",
     "descricao": "Cozinha",
     "sizes": [
-      "Tamanho Único"
+      "Tamanho Único 10cm"
     ],
     "image": "3500-04.jpg"
   },
@@ -546,10 +546,10 @@ const productsData = [
     "nome": "Espátula Profissional 3528",
     "descricao": "Serrilhadas",
     "sizes": [
-      "10",
-      "12",
-      "14",
-      "16"
+      "10\"",
+      "12\"",
+      "14\"",
+      "16\""
     ],
     "image": "4520-10.jpg"
   },
@@ -577,7 +577,7 @@ const productsData = [
   },
   {
     "id": "6510",
-    "nome": "Espátula Profissional 6510",
+    "nome": "Cortador Profissional 6510",
     "descricao": "Pizzaria",
     "sizes": [
       "10"
@@ -586,7 +586,7 @@ const productsData = [
   },
   {
     "id": "6516",
-    "nome": "Espátula Profissional 6516",
+    "nome": "Cortador Profissional 6516",
     "descricao": "Pizzaria",
     "sizes": [
       "50"
@@ -622,7 +622,7 @@ const productsData = [
   },
   {
     "id": "9510",
-    "nome": "Espátula Profissional 9510",
+    "nome": "Martelo Profissional 9510",
     "descricao": "MARTELO AMACIADOR DE CARNE EM ALUMINIO FUNDIDO.",
     "sizes": [
       "Tamanho Único"

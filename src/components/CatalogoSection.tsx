@@ -7,6 +7,7 @@ const productImages02 = import.meta.glob('../assets/Espatulas02/*.jpg', { eager:
 const productImages04 = import.meta.glob('../assets/espatulas04/*.jpg', { eager: true, as: 'url' });
 
 const productsData = [
+
   {
     "id": "1150",
     "nome": "Espátula Profissional 1150",
@@ -34,6 +35,17 @@ const productsData = [
     "image": "1414-12.jpg"
   },
   {
+    "id": "1419",
+    "nome": "Espátula Profissional 1419",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "10",
+      "12"
+    ],
+    "image": "1419-12.jpg"
+  },
+  {
     "id": "1501",
     "nome": "Espátula Profissional 1501",
     "descricao": "Lanche",
@@ -54,6 +66,15 @@ const productsData = [
     "image": "1502-10 ou 1502-12.jpg"
   },
   {
+    "id": "1503",
+    "nome": "TRIÂNGULO MARCADOR",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "1503-01.jpg"
+  },
+  {
     "id": "1505",
     "nome": "GARRA DE URSO PARA CARNES",
     "descricao": "Churrasco",
@@ -61,6 +82,17 @@ const productsData = [
       "12"
     ],
     "image": "1505-05.jpg"
+  },
+  {
+    "id": "1507",
+    "nome": "Espátula Profissional 1507",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "12",
+      "18",
+      "22"
+    ],
+    "image": "1507-18.jpg"
   },
   {
     "id": "1508",
@@ -85,6 +117,17 @@ const productsData = [
       "12"
     ],
     "image": "1510-12.jpg"
+  },
+  {
+    "id": "1511",
+    "nome": "Espátula Profissional 1511",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "10",
+      "12"
+    ],
+    "image": "1511-12.jpg"
   },
   {
     "id": "1514",
@@ -191,248 +234,6 @@ const productsData = [
     "image": "1715-12.jpg"
   },
   {
-    "id": "2505",
-    "nome": "Espátula Profissional 2505",
-    "descricao": "Torta",
-    "sizes": [
-      "06"
-    ],
-    "image": "2505-06.jpg"
-  },
-  {
-    "id": "2511",
-    "nome": "Espátula Profissional 2511",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "05"
-    ],
-    "image": "2511-05.jpg"
-  },
-  {
-    "id": "2515",
-    "nome": "Espátula Profissional 2515",
-    "descricao": "Descamar",
-    "sizes": [
-      "05",
-      "07"
-    ],
-    "image": "2515-07 (1).jpg"
-  },
-  {
-    "id": "2517",
-    "nome": "Espátula Profissional 2517",
-    "descricao": "Pizzaria / Cortar e Servir",
-    "sizes": [
-      "17"
-    ],
-    "image": "2517-17.jpg"
-  },
-  {
-    "id": "2518",
-    "nome": "Espátula Profissional 2518",
-    "descricao": "Lanche",
-    "sizes": [
-      "12",
-      "14"
-    ],
-    "image": "2518-14.jpg"
-  },
-  {
-    "id": "2520",
-    "nome": "ESPÁTULA FRITURA",
-    "descricao": "Peixe",
-    "sizes": [
-      "Tamanho Único"
-    ],
-    "image": "2520-06.jpg"
-  },
-  {
-    "id": "2521",
-    "nome": "Espátula Profissional 2521",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "10",
-      "15",
-      "20"
-    ],
-    "image": "2521-15.jpg"
-  },
-  {
-    "id": "2522",
-    "nome": "Espátula Profissional 2522",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "10",
-      "15",
-      "20"
-    ],
-    "image": "2522-15(2).jpg"
-  },
-  {
-    "id": "2526",
-    "nome": "Espátula Profissional 2526",
-    "descricao": "Esfiha",
-    "sizes": [
-      "12"
-    ],
-    "image": "2526-12.jpg"
-  },
-  {
-    "id": "2527",
-    "nome": "Espátula Profissional 2527",
-    "descricao": "Esfiha",
-    "sizes": [
-      "12"
-    ],
-    "image": "2527-12.jpg"
-  },
-  {
-    "id": "2530",
-    "nome": "Espátula Profissional 2530",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "10",
-      "15",
-      "20",
-      "25",
-      "30",
-      "35",
-      "40"
-    ],
-    "image": "2530-40.jpg"
-  },
-  {
-    "id": "2536",
-    "nome": "Espátula Profissional 2536",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "20",
-      "25",
-      "30",
-      "35",
-      "40",
-      "45"
-    ],
-    "image": "2536-30.jpg"
-  },
-  {
-    "id": "3528",
-    "nome": "Espátula Profissional 3528",
-    "descricao": "Serrilhadas",
-    "sizes": [
-      "10",
-      "12",
-      "14",
-      "16"
-    ],
-    "image": "4520-10.jpg"
-  },
-  {
-    "id": "6510",
-    "nome": "Espátula Profissional 6510",
-    "descricao": "Pizzaria",
-    "sizes": [
-      "10"
-    ],
-    "image": "6510-10.jpg"
-  },
-  {
-    "id": "6516",
-    "nome": "Espátula Profissional 6516",
-    "descricao": "Pizzaria",
-    "sizes": [
-      "50"
-    ],
-    "image": "6516-50.jpg"
-  },
-  {
-    "id": "6520",
-    "nome": "CARRETILHA CORTAR MASSAS",
-    "descricao": "Panificação",
-    "sizes": [
-      "05"
-    ],
-    "image": "6520-05.jpg"
-  },
-  {
-    "id": "6530",
-    "nome": "CARRETILHA FECHAR MASSAS",
-    "descricao": "Panificação",
-    "sizes": [
-      "05"
-    ],
-    "image": "6530-05.jpg"
-  },
-  {
-    "id": "6550",
-    "nome": "CARRETINHA DUPLA CORTAR E FECHAR MASSAS",
-    "descricao": "Panificação",
-    "sizes": [
-      "05"
-    ],
-    "image": "6550-05.jpg"
-  },
-  {
-    "id": "9510",
-    "nome": "Espátula Profissional 9510",
-    "descricao": "MARTELO AMACIADOR DE CARNE EM ALUMINIO FUNDIDO.",
-    "sizes": [
-      "Tamanho Único"
-    ],
-    "image": "9510-10.jpg"
-  },
-  {
-    "id": "9512",
-    "nome": "PLACA SALVA BOLO ou PARA PIZZAS",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "30"
-    ],
-    "image": "9512-30.jpg"
-  },
-  {
-    "id": "1419",
-    "nome": "Espátula Profissional 1419",
-    "descricao": "Lanche",
-    "sizes": [
-      "08",
-      "10",
-      "12"
-    ],
-    "image": "1419-12.jpg"
-  },
-  {
-    "id": "1503",
-    "nome": "TRIÂNGULO MARCADOR",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "Tamanho Único"
-    ],
-    "image": "1503-01.jpg"
-  },
-  {
-    "id": "1507",
-    "nome": "Espátula Profissional 1507",
-    "descricao": "Confeitaria",
-    "sizes": [
-      "12",
-      "18",
-      "22"
-    ],
-    "image": "1507-18.jpg"
-  },
-  {
-    "id": "1511",
-    "nome": "Espátula Profissional 1511",
-    "descricao": "Lanche",
-    "sizes": [
-      "08",
-      "10",
-      "12"
-    ],
-    "image": "1511-12.jpg"
-  },
-  {
     "id": "2500",
     "nome": "Espátula Profissional 2500",
     "descricao": "Confeitaria",
@@ -515,6 +316,24 @@ const productsData = [
     "image": "2504-03.jpg"
   },
   {
+    "id": "2505",
+    "nome": "Espátula Profissional 2505",
+    "descricao": "Torta",
+    "sizes": [
+      "06"
+    ],
+    "image": "2505-06.jpg"
+  },
+  {
+    "id": "2511",
+    "nome": "Espátula Profissional 2511",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "05"
+    ],
+    "image": "2511-05.jpg"
+  },
+  {
     "id": "2513",
     "nome": "Espátula Profissional 2513",
     "descricao": "Confeitaria",
@@ -533,6 +352,16 @@ const productsData = [
     "image": "2514-07.jpg"
   },
   {
+    "id": "2515",
+    "nome": "Espátula Profissional 2515",
+    "descricao": "Descamar",
+    "sizes": [
+      "05",
+      "07"
+    ],
+    "image": "2515-07 (1).jpg"
+  },
+  {
     "id": "2516",
     "nome": "ESPÁTULA COZINHA",
     "descricao": "Cozinha",
@@ -543,6 +372,34 @@ const productsData = [
     "image": "2516-10.jpg"
   },
   {
+    "id": "2517",
+    "nome": "Espátula Profissional 2517",
+    "descricao": "Pizzaria / Cortar e Servir",
+    "sizes": [
+      "17"
+    ],
+    "image": "2517-17.jpg"
+  },
+  {
+    "id": "2518",
+    "nome": "Espátula Profissional 2518",
+    "descricao": "Lanche",
+    "sizes": [
+      "12",
+      "14"
+    ],
+    "image": "2518-14.jpg"
+  },
+  {
+    "id": "2520",
+    "nome": "ESPÁTULA FRITURA",
+    "descricao": "Peixe",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2520-06.jpg"
+  },
+  {
     "id": "2520",
     "nome": "ESPÁTULA FRITURA",
     "descricao": "Fritura",
@@ -550,6 +407,46 @@ const productsData = [
       "Tamanho Único"
     ],
     "image": "2520-07.jpg"
+  },
+  {
+    "id": "2521",
+    "nome": "Espátula Profissional 2521",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "10",
+      "15",
+      "20"
+    ],
+    "image": "2521-15.jpg"
+  },
+  {
+    "id": "2522",
+    "nome": "Espátula Profissional 2522",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "10",
+      "15",
+      "20"
+    ],
+    "image": "2522-15(2).jpg"
+  },
+  {
+    "id": "2526",
+    "nome": "Espátula Profissional 2526",
+    "descricao": "Esfiha",
+    "sizes": [
+      "12"
+    ],
+    "image": "2526-12.jpg"
+  },
+  {
+    "id": "2527",
+    "nome": "Espátula Profissional 2527",
+    "descricao": "Esfiha",
+    "sizes": [
+      "12"
+    ],
+    "image": "2527-12.jpg"
   },
   {
     "id": "2528",
@@ -563,6 +460,21 @@ const productsData = [
       "40"
     ],
     "image": "2528-25.jpg"
+  },
+  {
+    "id": "2530",
+    "nome": "Espátula Profissional 2530",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "10",
+      "15",
+      "20",
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "image": "2530-40.jpg"
   },
   {
     "id": "2531",
@@ -593,6 +505,20 @@ const productsData = [
     "image": "2532-20.jpg"
   },
   {
+    "id": "2536",
+    "nome": "Espátula Profissional 2536",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "20",
+      "25",
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "image": "2536-30.jpg"
+  },
+  {
     "id": "2537",
     "nome": "Espátula Profissional 2537",
     "descricao": "Confeitaria",
@@ -616,6 +542,18 @@ const productsData = [
     "image": "3500-04.jpg"
   },
   {
+    "id": "3528",
+    "nome": "Espátula Profissional 3528",
+    "descricao": "Serrilhadas",
+    "sizes": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "image": "4520-10.jpg"
+  },
+  {
     "id": "4520",
     "nome": "Faca Fiambre 4520",
     "descricao": "Fiambre",
@@ -636,6 +574,69 @@ const productsData = [
       "10\""
     ],
     "image": "4530-08.jpg"
+  },
+  {
+    "id": "6510",
+    "nome": "Espátula Profissional 6510",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "10"
+    ],
+    "image": "6510-10.jpg"
+  },
+  {
+    "id": "6516",
+    "nome": "Espátula Profissional 6516",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "50"
+    ],
+    "image": "6516-50.jpg"
+  },
+  {
+    "id": "6520",
+    "nome": "CARRETILHA CORTAR MASSAS",
+    "descricao": "Panificação",
+    "sizes": [
+      "05"
+    ],
+    "image": "6520-05.jpg"
+  },
+  {
+    "id": "6530",
+    "nome": "CARRETILHA FECHAR MASSAS",
+    "descricao": "Panificação",
+    "sizes": [
+      "05"
+    ],
+    "image": "6530-05.jpg"
+  },
+  {
+    "id": "6550",
+    "nome": "CARRETINHA DUPLA CORTAR E FECHAR MASSAS",
+    "descricao": "Panificação",
+    "sizes": [
+      "05"
+    ],
+    "image": "6550-05.jpg"
+  },
+  {
+    "id": "9510",
+    "nome": "Espátula Profissional 9510",
+    "descricao": "MARTELO AMACIADOR DE CARNE EM ALUMINIO FUNDIDO.",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "9510-10.jpg"
+  },
+  {
+    "id": "9512",
+    "nome": "PLACA SALVA BOLO ou PARA PIZZAS",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "30"
+    ],
+    "image": "9512-30.jpg"
   },
   {
     "id": "9545",

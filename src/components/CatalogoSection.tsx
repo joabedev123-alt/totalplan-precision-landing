@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 // Import all product images dynamically
 const productImages = import.meta.glob('../pastadeprodutos/espatula para codificação/*.jpg', { eager: true, as: 'url' });
 const productImages02 = import.meta.glob('../assets/Espatulas02/*.jpg', { eager: true, as: 'url' });
+const productImages04 = import.meta.glob('../assets/espatulas04/*.jpg', { eager: true, as: 'url' });
 
 const productsData = [
   {
@@ -83,7 +84,7 @@ const productsData = [
       "10",
       "12"
     ],
-    "image": "1510-06.jpg"
+    "image": "1510-12.jpg"
   },
   {
     "id": "1514",
@@ -103,7 +104,7 @@ const productsData = [
     "nome": "ESPÁTULA HAMBURGUER",
     "descricao": "Chapa/Hamburguer",
     "sizes": [
-      "Tamanho Único"
+      "Tamanho Único 11"
     ],
     "image": "1518-11.jpg"
   },
@@ -317,7 +318,7 @@ const productsData = [
   {
     "id": "3528",
     "nome": "Espátula Profissional 3528",
-    "descricao": "Fiambre",
+    "descricao": "Serrilhadas",
     "sizes": [
       "10",
       "12",
@@ -374,7 +375,7 @@ const productsData = [
   {
     "id": "9510",
     "nome": "Espátula Profissional 9510",
-    "descricao": "Espátula profissional de alta qualidade. Disponível em diversos tamanhos.",
+    "descricao": "MARTELO AMACIADOR DE CARNE EM ALUMINIO FUNDIDO.",
     "sizes": [
       "Tamanho Único"
     ],
@@ -412,7 +413,7 @@ const productsData = [
   {
     "id": "1507",
     "nome": "Espátula Profissional 1507",
-    "descricao": "Lanche",
+    "descricao": "Confeitaria",
     "sizes": [
       "12",
       "18",
@@ -446,32 +447,72 @@ const productsData = [
     "nome": "ESPÁTULA CONFEITAR",
     "descricao": "Confeitaria",
     "sizes": [
-      "Tamanho Único"
+      "Tamanho Único 15"
     ],
     "image": "2501-15.jpg"
   },
   {
-    "id": "2503",
-    "nome": "Espátula Profissional 2503",
+    "id": "2503-01",
+    "nome": "Espátula Profissional 2503-01",
     "descricao": "Confeitaria",
     "sizes": [
-      "01",
-      "02",
-      "03",
-      "04"
+      "Tamanho Único"
     ],
     "image": "2503-01.jpg"
   },
   {
-    "id": "2504",
-    "nome": "Espátula Profissional 2504",
+    "id": "2503-02",
+    "nome": "Espátula Profissional 2503-02",
     "descricao": "Confeitaria",
     "sizes": [
-      "01",
-      "02",
-      "03"
+      "Tamanho Único"
+    ],
+    "image": "2503-02.jpg"
+  },
+  {
+    "id": "2503-03",
+    "nome": "Espátula Profissional 2503-03",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2503-03.jpg"
+  },
+  {
+    "id": "2503-04",
+    "nome": "Espátula Profissional 2503-04",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2503-04.jpg"
+  },
+  {
+    "id": "2504-01",
+    "nome": "Espátula Profissional 2504-01",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
     ],
     "image": "2504-01.jpg"
+  },
+  {
+    "id": "2504-02",
+    "nome": "Espátula Profissional 2504-02",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2504-02.jpg"
+  },
+  {
+    "id": "2504-03",
+    "nome": "Espátula Profissional 2504-03",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2504-03.jpg"
   },
   {
     "id": "2513",
@@ -576,13 +617,13 @@ const productsData = [
   },
   {
     "id": "4520",
-    "nome": "Espátula Profissional 4520",
+    "nome": "Faca Fiambre 4520",
     "descricao": "Fiambre",
     "sizes": [
-      "10",
-      "12",
-      "14",
-      "16 pol"
+      "10\"",
+      "12\"",
+      "14\"",
+      "16\""
     ],
     "image": "4520-10.jpg"
   },
@@ -591,8 +632,8 @@ const productsData = [
     "nome": "Espátula Profissional 4530",
     "descricao": "Fiambre",
     "sizes": [
-      "08",
-      "10 pol"
+      "08\"",
+      "10\""
     ],
     "image": "4530-08.jpg"
   },
@@ -632,6 +673,10 @@ const CatalogoSection = () => {
     const key2 = `../assets/Espatulas02/${filename}`;
     if (productImages02[key2]) return productImages02[key2] as string;
 
+    // Try to find image in the third folder (espatulas04)
+    const key3 = `../assets/espatulas04/${filename}`;
+    if (productImages04[key3]) return productImages04[key3] as string;
+
     // Return a placeholder or the filename itself if not found
     return filename;
   };
@@ -651,7 +696,7 @@ const CatalogoSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {productsData.map((produto, index) => (
             <div
               key={produto.id}
@@ -693,7 +738,7 @@ const CatalogoSection = () => {
                         key={size}
                         className="inline-flex items-center px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md border border-primary/20"
                       >
-                        {size === "Tamanho Único" ? size : `${size} cm`}
+                        {size.match(/["']$|pol$/i) || size === "Tamanho Único" ? size : `${size} cm`}
                       </span>
                     ))}
                   </div>

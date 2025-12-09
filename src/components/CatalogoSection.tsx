@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 // Import all product images dynamically
 const productImages = import.meta.glob('../pastadeprodutos/espatula para codificação/*.jpg', { eager: true, as: 'url' });
+const productImages02 = import.meta.glob('../assets/Espatulas02/*.jpg', { eager: true, as: 'url' });
 
 const productsData = [
   {
@@ -300,8 +301,8 @@ const productsData = [
     "image": "2530-40.jpg"
   },
   {
-    "id": "3528",
-    "nome": "Espátula Profissional 3528",
+    "id": "2536",
+    "nome": "Espátula Profissional 2536",
     "descricao": "Confeitaria",
     "sizes": [
       "20",
@@ -314,8 +315,8 @@ const productsData = [
     "image": "2536-30.jpg"
   },
   {
-    "id": "4520",
-    "nome": "Espátula Profissional 4520",
+    "id": "3528",
+    "nome": "Espátula Profissional 3528",
     "descricao": "Fiambre",
     "sizes": [
       "10",
@@ -387,14 +388,252 @@ const productsData = [
       "30"
     ],
     "image": "9512-30.jpg"
+  },
+  {
+    "id": "1419",
+    "nome": "Espátula Profissional 1419",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "10",
+      "12"
+    ],
+    "image": "1419-12.jpg"
+  },
+  {
+    "id": "1503",
+    "nome": "TRIÂNGULO MARCADOR",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "1503-01.jpg"
+  },
+  {
+    "id": "1507",
+    "nome": "Espátula Profissional 1507",
+    "descricao": "Lanche",
+    "sizes": [
+      "12",
+      "18",
+      "22"
+    ],
+    "image": "1507-18.jpg"
+  },
+  {
+    "id": "1511",
+    "nome": "Espátula Profissional 1511",
+    "descricao": "Lanche",
+    "sizes": [
+      "08",
+      "10",
+      "12"
+    ],
+    "image": "1511-12.jpg"
+  },
+  {
+    "id": "2500",
+    "nome": "Espátula Profissional 2500",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "10",
+      "15"
+    ],
+    "image": "2500-15.jpg"
+  },
+  {
+    "id": "2501",
+    "nome": "ESPÁTULA CONFEITAR",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2501-15.jpg"
+  },
+  {
+    "id": "2503",
+    "nome": "Espátula Profissional 2503",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "image": "2503-01.jpg"
+  },
+  {
+    "id": "2504",
+    "nome": "Espátula Profissional 2504",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "01",
+      "02",
+      "03"
+    ],
+    "image": "2504-01.jpg"
+  },
+  {
+    "id": "2513",
+    "nome": "Espátula Profissional 2513",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "06"
+    ],
+    "image": "2513-06.jpg"
+  },
+  {
+    "id": "2514",
+    "nome": "ESPÁTULA LAZANHA",
+    "descricao": "Cozinha",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2514-07.jpg"
+  },
+  {
+    "id": "2516",
+    "nome": "ESPÁTULA COZINHA",
+    "descricao": "Cozinha",
+    "sizes": [
+      "07",
+      "10"
+    ],
+    "image": "2516-10.jpg"
+  },
+  {
+    "id": "2520",
+    "nome": "ESPÁTULA FRITURA",
+    "descricao": "Fritura",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "2520-07.jpg"
+  },
+  {
+    "id": "2528",
+    "nome": "Espátula Profissional 2528",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "20",
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "image": "2528-25.jpg"
+  },
+  {
+    "id": "2531",
+    "nome": "Espátula Profissional 2531",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "15",
+      "20",
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "image": "2531-25.jpg"
+  },
+  {
+    "id": "2532",
+    "nome": "Espátula Profissional 2532",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "10",
+      "15",
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "image": "2532-20.jpg"
+  },
+  {
+    "id": "2537",
+    "nome": "Espátula Profissional 2537",
+    "descricao": "Confeitaria",
+    "sizes": [
+      "20",
+      "25",
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "image": "2537-30.jpg"
+  },
+  {
+    "id": "3500",
+    "nome": "ESPÁTULA MANTEIGA",
+    "descricao": "Cozinha",
+    "sizes": [
+      "Tamanho Único"
+    ],
+    "image": "3500-04.jpg"
+  },
+  {
+    "id": "4520",
+    "nome": "Espátula Profissional 4520",
+    "descricao": "Fiambre",
+    "sizes": [
+      "10",
+      "12",
+      "14",
+      "16 pol"
+    ],
+    "image": "4520-10.jpg"
+  },
+  {
+    "id": "4530",
+    "nome": "Espátula Profissional 4530",
+    "descricao": "Fiambre",
+    "sizes": [
+      "08",
+      "10 pol"
+    ],
+    "image": "4530-08.jpg"
+  },
+  {
+    "id": "9545",
+    "nome": "PÁ LISA C/ CABO 90CM",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "image": "PÁ LISA  (9550).jpg"
+  },
+  {
+    "id": "9550",
+    "nome": "PÁ LISA C/ CABO 1,70M",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "image": "PÁ LISA  (9550).jpg"
   }
 ];
 
 const CatalogoSection = () => {
   const getImageUrl = (filename: string) => {
-    // Construct the key matching the glob pattern
-    const key = `../pastadeprodutos/espatula para codificação/${filename}`;
-    return productImages[key] as string;
+    // Try to find image in the first folder
+    const key1 = `../pastadeprodutos/espatula para codificação/${filename}`;
+    if (productImages[key1]) return productImages[key1] as string;
+
+    // Try to find image in the second folder (Espatulas02)
+    const key2 = `../assets/Espatulas02/${filename}`;
+    if (productImages02[key2]) return productImages02[key2] as string;
+
+    // Return a placeholder or the filename itself if not found
+    return filename;
   };
 
   return (

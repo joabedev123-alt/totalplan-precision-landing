@@ -730,22 +730,22 @@ const CatalogoSection = () => {
           {productsData.map((produto, index) => (
             <div
               key={produto.id}
-              className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 shadow-card hover:shadow-card-hover animate-fade-up opacity-0"
+              className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 shadow-card hover:shadow-card-hover animate-fade-up opacity-0 flex flex-col"
               style={{ animationDelay: `${0.1 * (index + 1)}s`, animationFillMode: "forwards" }}
             >
               {/* Image Container */}
-              <div className="relative h-48 md:h-64 overflow-hidden bg-muted flex items-center justify-center p-4">
+              <div className="relative h-48 md:h-64 overflow-hidden bg-white flex items-center justify-center">
                 <img
                   src={getImageUrl(produto.image)}
                   alt={produto.nome}
                   loading="lazy"
-                  className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-4 md:p-6 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-display text-lg font-bold text-foreground">
                     {produto.nome}
@@ -774,7 +774,7 @@ const CatalogoSection = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" className="w-full group/btn" asChild>
+                <Button variant="outline" className="w-full group/btn mt-auto" asChild>
                   <a
                     href={`https://wa.me/5519994826736?text=Olá! Tenho interesse na ${produto.nome} (Ref: ${produto.id})`}
                     target="_blank"

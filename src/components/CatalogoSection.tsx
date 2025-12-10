@@ -362,11 +362,19 @@ const productsData = [
     "image": "2515-07 (1).jpg"
   },
   {
-    "id": "2516",
+    "id": "2516/07",
     "nome": "ESPÁTULA COZINHA",
     "descricao": "Cozinha",
     "sizes": [
-      "07",
+      "07"
+    ],
+    "image": "2516-07.jpg"
+  },
+  {
+    "id": "2516/10",
+    "nome": "ESPÁTULA COZINHA",
+    "descricao": "Cozinha",
+    "sizes": [
       "10"
     ],
     "image": "2516-10.jpg"
@@ -718,7 +726,7 @@ const CatalogoSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
           {productsData.map((produto, index) => (
             <div
               key={produto.id}

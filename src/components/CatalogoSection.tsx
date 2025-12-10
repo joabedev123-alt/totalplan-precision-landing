@@ -391,7 +391,7 @@ const productsData = [
     "image": "2518-14.jpg"
   },
   {
-    "id": "2520",
+    "id": "2520/6",
     "nome": "ESPÁTULA FRITURA",
     "descricao": "Peixe",
     "sizes": [
@@ -400,7 +400,7 @@ const productsData = [
     "image": "2520-06.jpg"
   },
   {
-    "id": "2520",
+    "id": "2520/07",
     "nome": "ESPÁTULA FRITURA",
     "descricao": "Fritura",
     "sizes": [
@@ -546,10 +546,12 @@ const productsData = [
     "nome": "Espátula Profissional 3528",
     "descricao": "Serrilhadas",
     "sizes": [
-      "10\"",
-      "12\"",
-      "14\"",
-      "16\""
+      "20",
+      "25",
+      "30",
+      "35",
+      "40",
+      "45"
     ],
     "image": "4520-10.jpg"
   },
@@ -558,6 +560,7 @@ const productsData = [
     "nome": "Faca Fiambre 4520",
     "descricao": "Fiambre",
     "sizes": [
+      "08\"",
       "10\"",
       "12\"",
       "14\"",
@@ -568,7 +571,7 @@ const productsData = [
   {
     "id": "4530",
     "nome": "Espátula Profissional 4530",
-    "descricao": "Fiambre",
+    "descricao": "Faca de Pão",
     "sizes": [
       "08\"",
       "10\""
@@ -576,13 +579,22 @@ const productsData = [
     "image": "4530-08.jpg"
   },
   {
-    "id": "6510",
+    "id": "6510/10",
     "nome": "Cortador Profissional 6510",
     "descricao": "Pizzaria",
     "sizes": [
       "10"
     ],
     "image": "6510-10.jpg"
+  },
+  {
+    "id": "6510/07",
+    "nome": "Cortador Profissional 6510",
+    "descricao": "Pizzaria",
+    "sizes": [
+      "07"
+    ],
+    "image": "6510-07.jpg"
   },
   {
     "id": "6516",
@@ -661,6 +673,15 @@ const productsData = [
       "45"
     ],
     "image": "PÁ LISA  (9550).jpg"
+  },
+  {
+    "id": "CABOS",
+    "nome": "CABOS COLORIDOS PARA TODOS OS ITENS",
+    "descricao": "COR E QUANTIDADE SOB CONSULTA",
+    "sizes": [
+      "Consultar"
+    ],
+    "image": "CABOS COLORIDOS 2.jpg"
   }
 ];
 

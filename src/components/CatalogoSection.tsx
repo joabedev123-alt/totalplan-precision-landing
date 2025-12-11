@@ -32,7 +32,8 @@ const productsData = [
       "12",
       "14"
     ],
-    "image": "1414-12.jpg"
+    "image": "1414-12.jpg",
+    "extraInfo": "Comprimento Total 26cm"
   },
   {
     "id": "1419",
@@ -43,7 +44,8 @@ const productsData = [
       "10",
       "12"
     ],
-    "image": "1419-12.jpg"
+    "image": "1419-12.jpg",
+    "extraInfo": "Comprimento Total 28cm"
   },
   {
     "id": "1501",
@@ -116,7 +118,8 @@ const productsData = [
       "10",
       "12"
     ],
-    "image": "1510-12.jpg"
+    "image": "1510-12.jpg",
+    "extraInfo": "Comprimento Total 22cm"
   },
   {
     "id": "1511",
@@ -127,7 +130,8 @@ const productsData = [
       "10",
       "12"
     ],
-    "image": "1511-12.jpg"
+    "image": "1511-12.jpg",
+    "extraInfo": "Comprimento Total 23cm"
   },
   {
     "id": "1514",
@@ -140,7 +144,8 @@ const productsData = [
       "14",
       "16"
     ],
-    "image": "1514-10 (2).jpg"
+    "image": "1514-10 (2).jpg",
+    "extraInfo": "Comprimento Total 24,5cm"
   },
   {
     "id": "1518",
@@ -162,7 +167,8 @@ const productsData = [
       "14",
       "16"
     ],
-    "image": "1519-08.jpg"
+    "image": "1519-08.jpg",
+    "extraInfo": "Comprimento Total 28cm"
   },
   {
     "id": "1601",
@@ -772,6 +778,13 @@ const CatalogoSection = () => {
                       </span>
                     ))}
                   </div>
+                  {/* @ts-ignore */}
+                  {produto.extraInfo && (
+                    <p className="text-sm text-muted-foreground mt-2 font-medium">
+                      {/* @ts-ignore */}
+                      {produto.extraInfo}
+                    </p>
+                  )}
                 </div>
 
                 <Button variant="outline" className="w-full group/btn mt-auto" asChild>
